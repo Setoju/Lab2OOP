@@ -25,9 +25,9 @@ namespace Lab2OOP
             Console.WriteLine("The height of the matrix got in java-style : " + matrix.GetHeight());
             Console.WriteLine("The width of the matrix got in java-style : " + matrix.GetWidth());
 
-            Console.WriteLine("Element of the matrix in place [0,0] : " + matrix[0,0]);
+            Console.WriteLine("Element of the matrix in place [0,0] : " + matrix[0, 0]);
 
-            Console.WriteLine("Element of the matrix in place [0,0] got in java-style : " + matrix.GetElement(0,0));
+            Console.WriteLine("Element of the matrix in place [0,0] got in java-style : " + matrix.GetElement(0, 0));
             matrix.SetElement(0, 0, -1);
             Console.WriteLine("Element [0,0] of the matrix has been changed to -1 ");
             Console.WriteLine("Your matrix : " + matrix);
@@ -38,7 +38,7 @@ namespace Lab2OOP
             string input = Console.ReadLine();
             MyMatrix diffMatrix = new MyMatrix(input);
             //Console.WriteLine("Sum of two matrix : " + (matrix + diffMatrix));
-            Console.WriteLine("Multiplication fo two matrix : " + (matrix * diffMatrix));            
+            Console.WriteLine("Multiplication fo two matrix : " + (matrix * diffMatrix));
         }
         public static double[,] InputMatrix(int rows, int cols)
         {

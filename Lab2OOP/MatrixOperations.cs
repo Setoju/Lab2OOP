@@ -14,6 +14,7 @@ namespace Lab2OOP
             int firstMatrixHeight = firstMatrix._matrix.GetLength(0);
             int secondMatrixWidth = secondMatrix._matrix.GetLength(1);
             int secondMatrixHeight = secondMatrix._matrix.GetLength(0);
+
             if (firstMatrixWidth == secondMatrixWidth && firstMatrixHeight == secondMatrixHeight)
             {
                 double[,] sumArray = new double[firstMatrixHeight, firstMatrixWidth];

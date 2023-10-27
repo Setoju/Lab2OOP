@@ -13,19 +13,7 @@ namespace Lab2OOP
         //Constructors                
         public MyMatrix(MyMatrix other)
         {
-            int numRows = other._matrix.GetLength(0);
-            int numCols = other._matrix.GetLength(1);
-
-            double[,] result = new double[numRows, numCols];
-
-            for (int i = 0; i < numRows; i++)
-            {
-                for (int j = 0; j < numCols; j++)
-                {
-                    result[i, j] = other._matrix[i, j];
-                }
-            }
-            _matrix = result;
+            _matrix = (double[,])other._matrix.Clone();            
         }
         public MyMatrix(double[,] matrix)
         {
